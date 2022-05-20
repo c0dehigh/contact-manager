@@ -1,4 +1,5 @@
-import { Pink, CurrentLine, Purple } from "../../helpers/colors";
+import {Pink} from "../../helpers/colors";
+import Contact from "./Contact";
 
 const Contacts = () => {
   return (
@@ -19,23 +20,8 @@ const Contacts = () => {
       </section>
       <section className="container">
         <div className="row">
-          <div className="col-md-6">
-            <div style={{ backgroundColor: CurrentLine }} className="card my-2">
-              <div className="card-body">
-                <div className="row align-items-center d-flex justify-content-around">
-                  <div className="col-md-4 col-sm-4">
-                    <img
-                      src="https://via.placeholder.com/200"
-                      alt=""
-                      style={{ border: `1px solid ${Purple}` }}
-                      className="img-fluid rounded"
-                    />
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/*contact*/}
+          <Contact/>
         </div>
       </section>
     </>
