@@ -1,5 +1,5 @@
 import Searchcontact from "./contact/Searchcontact";
-import { Purple, Background } from "../helpers/colors";
+import {Purple , Background} from '../helpers/colors'
 const Navbar = () => {
   return (
     <nav
