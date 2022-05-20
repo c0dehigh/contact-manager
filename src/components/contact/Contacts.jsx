@@ -23,7 +23,7 @@ const Contacts = () => {
             <div style={{ backgroundColor: CurrentLine }} className="card my-2">
               <div className="card-body">
                 <div className="row align-items-center d-flex justify-content-around">
-                    <div></div>
+                  <div></div>
                 </div>
               </div>
             </div>
