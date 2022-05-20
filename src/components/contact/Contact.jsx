@@ -26,7 +26,7 @@ const Contact = ()=>{
                                 <li className="list-group-item list-group-item-dark">
                                     :شماره موبایل
                                     <span className="fw-bold">
-                           ۰۹۳۹۰۰۲۰۰۱۶
+                           +1 317 721-9786
                          </span>
                                 </li>
 
