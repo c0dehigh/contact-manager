@@ -1,7 +1,7 @@
-import {Pink} from "../../helpers/colors";
+import {Pink, CurrentLine, Orange} from "../../helpers/colors";
 import Contact from "./Contact";
 
-const Contacts = () => {
+const Contacts = ({contacts}) => {
   return (
     <>
       <section className="container">
@@ -21,7 +21,18 @@ const Contacts = () => {
       <section className="container">
         <div className="row">
           {/*contact*/}
-          <Contact/>
+          {
+            contacts.length > 0 ? contacts.map(c => (
+                <Contact key={c.id} contact={c}/>
+            )) :
+                (
+                    <div className="text-center py-5" style={{backgroundColor:CurrentLine}}>
+                      <p className="h3 " style={{color: Orange}}>مخاطب یافت نشد</p>
+                      <img src={require('../../assets/no-found.gif')} alt="" className="w-25"/>
+                    </div>
+                )
+          }
+
         </div>
       </section>
     </>
