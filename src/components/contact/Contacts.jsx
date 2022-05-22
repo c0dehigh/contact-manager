@@ -28,7 +28,7 @@ const Contacts = ({contacts}) => {
                 (
                     <div className="text-center py-5" style={{backgroundColor:CurrentLine}}>
                       <p className="h3 " style={{color: Orange}}>مخاطب یافت نشد</p>
-                      <img src={require('../../assets/no-found.gif')} alt="" className="w-25"/>
+                      <img src={require('../../assets/no-found.gif')} alt="یافت نشد" className="w-25"/>
                     </div>
                 )
           }
