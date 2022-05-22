@@ -1,7 +1,8 @@
 import {Pink, CurrentLine, Orange} from "../../helpers/colors";
 import Contact from "./Contact";
+import Spinner from "../Spinner";
 
-const Contacts = ({contacts}) => {
+const Contacts = ({contacts,loading}) => {
   return (
     <>
       <section className="container">
@@ -18,23 +19,27 @@ const Contacts = ({contacts}) => {
           </div>
         </div>
       </section>
-      <section className="container">
-        <div className="row">
-          {/*contact*/}
-          {
-            contacts.length > 0 ? contacts.map(c => (
-                <Contact key={c.id} contact={c}/>
-            )) :
-                (
-                    <div className="text-center py-5" style={{backgroundColor:CurrentLine}}>
-                      <p className="h3 " style={{color: Orange}}>مخاطب یافت نشد</p>
-                      <img src={require('../../assets/no-found.gif')} alt="یافت نشد" className="w-25"/>
-                    </div>
-                )
-          }
+      {
+        loading ? <Spinner/> : (
+            <section className="container">
+              <div className="row">
+                {/*contact*/}
+                {
+                  contacts.length > 0 ? contacts.map(c => (
+                          <Contact key={c.id} contact={c}/>
+                      )) :
+                      (
+                          <div className="text-center py-5" style={{backgroundColor:CurrentLine}}>
+                            <p className="h3 " style={{color: Orange}}>مخاطب یافت نشد</p>
+                            <img src={require('../../assets/no-found.gif')} alt="یافت نشد" className="w-25"/>
+                          </div>
+                      )
+                }
+              </div>
+            </section>
+        )
+      }
 
-        </div>
-      </section>
     </>
   );
 };
