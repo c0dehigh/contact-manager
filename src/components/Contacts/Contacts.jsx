@@ -23,7 +23,7 @@ const Contacts = ({contacts,loading}) => {
         loading ? <Spinner/> : (
             <section className="container">
               <div className="row">
-                {/*contact*/}
+                {/*Contacts*/}
                 {
                   contacts.length > 0 ? contacts.map(c => (
                           <Contact key={c.id} contact={c}/>
