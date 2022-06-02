@@ -1,0 +1,35 @@
+{
+  "contacts": [
+    {
+      "fullname": "Hamed zibandeh",
+      "photo": "",
+      "mobile": "09122343829",
+      "email": "high_dev@outlook.com",
+      "job": "developer",
+      "group": "1",
+      "id": 1
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "hamkar"
+    },
+    {
+      "id": "2",
+      "name": "frinde"
+    },
+    {
+      "id": "3",
+      "name": "family"
+    },
+    {
+      "id": "4",
+      "name": "service"
+    },
+    {
+      "id": "5",
+      "name": "ashna"
+    }
+  ]
+}
