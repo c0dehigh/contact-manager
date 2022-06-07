@@ -13,7 +13,7 @@ const Contacts = ({ contacts, loading }) => {
             <div className="col">
               <p className="h3">
                 <Link
-                  to={"/contacts/add"}
+                  to={"/contacts/add"} 
                   className="btn mx-2"
                   style={{ backgroundColor: PINK }}
                 >
