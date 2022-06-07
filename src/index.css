@@ -1,6 +1,6 @@
 body {
   background-color: #252a36;
-  font-family: "Vazir" , "serif", "ubuntu" !important;
+  font-family: "Vazir", "tahoma", "Ubuntu" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,11 +16,11 @@ input[type="email"],
 input[type="number"] {
   color: #f8f8f4 !important;
   background-color: #44475a !important;
+  border-color: #bd93f9 !important;
 }
 
-
 .form-control {
-  background-color: #44475a;
+  background-color: #44475a !important;
   color: #f8f8f4 !important;
   border-color: #bd93f9 !important;
 }

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { Spinner } from "../";
-import { Comment, Green, Purple } from "../../helpers/colors";
+import { COMMENT, GREEN, PURPLE } from "../../helpers/colors";
 
 const AddContact = ({
   loading,
@@ -33,13 +33,13 @@ const AddContact = ({
                 <div className="col">
                   <p
                     className="h4 fw-bold text-center"
-                    style={{ color: Green }}
+                    style={{ color: GREEN }}
                   >
                     ساخت مخاطب جدید
                   </p>
                 </div>
               </div>
-              <hr style={{ backgroundColor: Green }} />
+              <hr style={{ backgroundColor: GREEN }} />
               <div className="row mt-5">
                 <div className="col-md-4">
                   <form onSubmit={createContactForm}>
@@ -119,13 +119,13 @@ const AddContact = ({
                       <input
                         type="submit"
                         className="btn"
-                        style={{ backgroundColor: Purple }}
+                        style={{ backgroundColor: PURPLE }}
                         value="ساخت مخاطب"
                       />
                       <Link
                         to={"/contacts"}
                         className="btn mx-2"
-                        style={{ backgroundColor: Comment }}
+                        style={{ backgroundColor: COMMENT }}
                       >
                         انصراف
                       </Link>

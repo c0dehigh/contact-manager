@@ -1,9 +1,9 @@
-const EditContact = ()=> {
-    return(
-        <>
-            <h2>Edit Contact</h2>
-        </>
-    )
-}
+const EditContact = () => {
+  return (
+    <>
+      <h2>Edit Contact</h2>
+    </>
+  );
+};
 
-export  default  EditContact
+export default EditContact;

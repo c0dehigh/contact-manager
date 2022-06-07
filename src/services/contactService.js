@@ -1,49 +1,51 @@
 import axios from "axios";
 
 const SERVER_URL = "http://localhost:9000";
-// Get All contacts
-// route GET https://localhost:9000/contacts
+
+// @desc Get All Contacts
+// @route GET http://localhost:9000/contacts
 export const getAllContacts = () => {
   const url = `${SERVER_URL}/contacts`;
   return axios.get(url);
 };
-// Get contact with contact ID
-// route GET https://localhost:9000/contacts/:contactId
+
+// @desc Get Contact With Contact ID
+// @route GET http://localhost:9000/contacts/:contactId
 export const getContact = (contactId) => {
   const url = `${SERVER_URL}/contacts/${contactId}`;
   return axios.get(url);
 };
 
-// Get All groups
-// route GET https://localhost:9000/groups
+// @desc  Get All Groups
+// @route GET http://localhost:9000/groups
 export const getAllGroups = () => {
   const url = `${SERVER_URL}/groups`;
   return axios.get(url);
 };
 
-// Get group with group ID
-// route GET https://localhost:9000/groups/:groupsId
+// @desc  Get Group Name With Group ID
+// @route GET http://localhost:9000/groups/:groupId
 export const getGroup = (groupId) => {
   const url = `${SERVER_URL}/groups/${groupId}`;
   return axios.get(url);
 };
 
-// create new contact
-// route POST https://localhost:9000/contacts
+// @desc  Create New Contact
+// @route POST http://localhost:9000/contacts
 export const createContact = (contact) => {
   const url = `${SERVER_URL}/contacts`;
   return axios.post(url, contact);
 };
 
-// update contact
-// route PUT https://localhost:9000/contacts/:contactId
+// @desc  Update Contact
+// @route PUT http://localhost:9000/contacts/:contactId
 export const updateContact = (contact, contactId) => {
   const url = `${SERVER_URL}/contacts/${contactId}`;
   return axios.put(url, contact);
 };
 
-// Delete contact
-// route DELETE https://localhost:9000/contacts/:contactId
+// @desc  Delete Contact
+// @route DELETE http://localhost:9000/contacts/:contactId
 export const deleteContact = (contactId) => {
   const url = `${SERVER_URL}/contacts/${contactId}`;
   return axios.delete(url);

@@ -1,12 +1,15 @@
-import spinnerGIF from '../assets/Spinner.gif'
+import SpinnerGIF from "../assets/Spinner.gif";
 
 const Spinner = () => {
-    return(
-        <>
-            <img src={spinnerGIF} alt="" className="d-block m-auto" style={{width: '200px'}}/>
-        </>
-    )
-}
+  return (
+    <>
+      <img
+        src={SpinnerGIF}
+        className="d-block m-auto"
+        style={{ width: "200px" }}
+      />
+    </>
+  );
+};
 
-
-export default Spinner
+export default Spinner;
