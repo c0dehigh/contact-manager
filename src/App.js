@@ -5,6 +5,7 @@ import {
   AddContact,
   Contact,
   Contacts,
+  ViewContact,
   EditContact,
   Navbar,
 } from "./components";
